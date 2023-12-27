@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.greeting-banner {
+    background-color: rgba(255, 0, 0, 0.7);
+    padding: 20px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.wrapper {
+    position: relative;
+    background-image: url('./gallery/image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.countdown-container {
+    text-align: center;
+    color: #ffffff;
+}
+
+#countdown {
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+/* Style the "Next" button with the provided properties */
+#nextButton {
+    background: linear-gradient(45deg, #3498db, #e74c3c);
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 40px; /* Add more margin to the top */
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#nextButton:hover {
+    background: linear-gradient(45deg, #2980b9, #c0392b);
+    transform: scale(1.05);
+}
