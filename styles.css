@@ -1,7 +1,8 @@
-body {
+html, body {
     margin: 0;
     padding: 0;
     font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
 }
 
 .background-image {
@@ -64,8 +65,21 @@ body {
     font-size: 36px;
     margin-top: 20px;
     max-width: 100%;
+    white-space: nowrap;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff7300, #eaeaea);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
+#dateString
+{
+    font-size: 18px;
+    margin-top: 20px;
+    max-width: 100%;
+    white-space: nowrap;
+    font-weight: bold;
+}
 #nextButton {
     margin-top: 20px; 
     display: inline-block;
@@ -81,27 +95,7 @@ body {
     background: linear-gradient(135deg, rgb(63, 94, 251), rgb(252, 70, 107));
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
-  
-    &:hover {
-      transform: scale(1.05);
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-    }
-  
-    &:active {
-      transform: scale(0.95);
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    }
-  
-    &:focus {
-      outline: none;
-    }
-  
-    &:disabled {
-      opacity: 0.6;
-      cursor: not-allowed;
-    }
-  }
-   
+}
 
 @media only screen and (max-width: 600px) {
     .greeting-banner {
