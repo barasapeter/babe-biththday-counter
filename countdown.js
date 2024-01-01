@@ -27,9 +27,9 @@ document.addEventListener('DOMContentLoaded', function () {
         const currentHour = new Date().getHours();
         let greeting = '';
 
-        if (currentHour >= 5 && currentHour < 12) {
+        if (currentHour >= 0 && currentHour < 12) {
             greeting = 'Good morning love';
-        } else if (currentHour >= 12 && currentHour < 17) {
+        } else if (currentHour >= 12 && currentHour < 15) {
             greeting = 'Good afternoon love';
         } else {
             greeting = 'Good evening love. Seriously, we should be cuddling right now.';
