@@ -67,21 +67,41 @@ body {
 }
 
 #nextButton {
-    background: linear-gradient(45deg, #3498db, #e74c3c);
-    color: white;
+    margin-top: 20px; 
+    display: inline-block;
     padding: 15px 30px;
     font-size: 18px;
-    border: none;
-    border-radius: 20px;
-    margin-top: 40px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
     cursor: pointer;
-    transition: background 0.3s ease, transform 0.3s ease;
-}
-
-#nextButton:hover {
-    background: linear-gradient(45deg, #2980b9, #c0392b);
-    transform: scale(1.05);
-}
+    border: none;
+    border-radius: 50px;
+    color: #ffffff;
+    background: linear-gradient(135deg, rgb(63, 94, 251), rgb(252, 70, 107));
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+  
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    }
+  
+    &:active {
+      transform: scale(0.95);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+  
+    &:focus {
+      outline: none;
+    }
+  
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+  }
+   
 
 @media only screen and (max-width: 600px) {
     .greeting-banner {
