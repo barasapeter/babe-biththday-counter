@@ -4,26 +4,22 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
-.greeting-banner {
-    background-color: rgba(255, 0, 0, 0.7);
-    padding: 20px 0;
-    text-align: center;
-    color: #ffffff;
-}
-
-.wrapper {
-    position: relative;
+.background-image {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background-image: url('./gallery/image.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    z-index: -1;
+    position: relative;
 }
 
-.wrapper::before {
+.background-image::before {
     content: "";
     position: absolute;
     top: 0;
@@ -33,17 +29,43 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.greeting-banner {
+    padding: 20px 0;
+    text-align: center;
+    color: #ffffff;
+    background-color: rgba(255, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateX(0);
+    z-index: 2;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
 .countdown-container {
     text-align: center;
     color: #ffffff;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 #countdown {
     font-size: 36px;
     margin-top: 20px;
+    max-width: 100%;
 }
 
-/* Style the "Next" button with the provided properties */
 #nextButton {
     background: linear-gradient(45deg, #3498db, #e74c3c);
     color: white;
@@ -51,7 +73,7 @@ body {
     font-size: 18px;
     border: none;
     border-radius: 20px;
-    margin-top: 40px; /* Add more margin to the top */
+    margin-top: 40px;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.3s ease;
 }
@@ -59,4 +81,16 @@ body {
 #nextButton:hover {
     background: linear-gradient(45deg, #2980b9, #c0392b);
     transform: scale(1.05);
+}
+
+@media only screen and (max-width: 600px) {
+    .greeting-banner {
+        top: 0;
+        padding-bottom: 20px;
+    }
+
+    .wrapper {
+        top: 50%;
+        transform: translate(-50%, -50%) translateY(20px);
+    }
 }

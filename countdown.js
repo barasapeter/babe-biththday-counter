@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Set the birthday date (format: month day, year)
     const birthday = new Date('December 15, 2002 00:00:00 GMT+00:00');
 
     function updateCountdown() {
@@ -38,19 +37,14 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('greeting').innerHTML = greeting;
     }
 
-    // Handle the "Next" button click event
     document.getElementById('nextButton').addEventListener('click', function () {
-        // Navigate to the next layout (gallery.html in this example)
         window.location.href = 'gallery.html';
     });
-
-    // Update the countdown and greeting every second
     setInterval(function () {
         updateCountdown();
         updateGreeting();
     }, 1000);
-
-    // Initial update
+    
     updateCountdown();
     updateGreeting();
 });
