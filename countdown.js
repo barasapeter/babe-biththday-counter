@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
         } else if (currentHour >= 12 && currentHour < 15) {
             greeting = 'Good afternoon love';
         } else {
-            greeting = 'Good evening love. Seriously, we should be cuddling right now.';
+            greeting = 'Good night, my love. I hope you have sweet dreams and wake up with a smile.';
         }
 
         document.getElementById('greeting').innerHTML = greeting;
