@@ -31,9 +31,8 @@ document.addEventListener('DOMContentLoaded', function () {
             greeting = 'Good morning love';
         } else if (currentHour >= 12 && currentHour < 15) {
             greeting = 'Good afternoon love';
-        else if (currentHour >= 15 < 19} {
+        } else if (currentHour >= 15  && currentHour < 19) {
             greeting = 'Good evening princess';
-        }
         } else {
             greeting = 'Good night, my love. I hope you have sweet dreams and wake up with a smile.';
         }
