@@ -11,7 +11,7 @@ html, body {
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: url('./gallery/image.jpg');
+    background-image: url('image2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
