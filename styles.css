@@ -14,7 +14,7 @@ html, body {
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: './gallery/image.jpg';
+    background-image: url('./gallery/image.jpg'); /* Update the path here */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
