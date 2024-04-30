@@ -3,7 +3,7 @@ html, body {
     padding: 0;
     font-family: 'Quicksand', sans-serif;
     overflow: hidden;
-    background-image: url('image.jpg');
+    background-image: "./gallery/image.jpg";
     background-size: cover; /* Adjusts the background image to cover the entire viewport */
     background-position: center; /* Centers the background image */
 }
