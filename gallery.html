@@ -31,34 +31,24 @@
     </style>
 </head>
 <body>
-    <div id="image-gallery">test...</div>
+    <div id="image-gallery"></div>
 
     <script>
         const galleryContainer = document.getElementById("image-gallery");
 
-        // Function to fetch images from the gallery folder
-        async function fetchImages() {
-            const response = await fetch('/gallery');
-            const data = await response.text();
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(data, 'text/html');
-            const imageLinks = Array.from(htmlDoc.querySelectorAll('a'))
-                                   .filter(link => link.href.match(/\.(jpe?g|png|gif)$/))
-                                   .map(link => link.href);
-            return imageLinks;
-        }
+        // Array of image filenames
+        const imageFilenames = ["image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg", "image5.jpg"];
 
         // Function to render images
-        async function renderImages() {
-            const images = await fetchImages();
+        function renderImages() {
             const overlayContent = "We are madly into each other 😂❤️";
 
-            images.forEach(image => {
+            imageFilenames.forEach(filename => {
                 const imageContainer = document.createElement("div");
                 imageContainer.classList.add("image-container");
 
                 const img = document.createElement("img");
-                img.src = image;
+                img.src = `./gallery/${filename}`; // Assuming the images are in a folder named "gallery"
                 img.alt = "Image";
                 imageContainer.appendChild(img);
 
@@ -79,4 +69,4 @@
         renderImages();
     </script>
 </body>
-    </html>
+</html>
