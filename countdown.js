@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const formattedNextBirthday = nextBirthday.toLocaleDateString('en-US', options);
 
         document.getElementById('countdown').innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-        document.getElementById('dateString').innerHTML = `On ${formattedNextBirthday}`;
+        document.getElementById('dateString').innerHTML = `On ${formattedNextBirthday}. Watch me na prepare 😜❤️.`;
     }
 
     function updateGreeting() {
