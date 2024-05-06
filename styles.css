@@ -34,7 +34,7 @@ html, body {
 }
 
 .greeting-banner {
-    padding: 20px 0;
+    padding: 10px 0;
     text-align: center;
     color: #ffffff;
     background-color: rgba(255, 0, 0, 0.3);
@@ -107,19 +107,17 @@ h1
 }
 
 .footer-banner {
-    
     border-radius: 30px;
     margin: 10px;
-    margin-top: 50px;
-    width: 100%;
+    width: 80%;
     background-color: #f8d7da; /* Red color for emphasis */
     color: #721c24; /* White text color */
-    padding: 10px;
+    padding: 2px;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
     font-weight: 700;
-    z-index: 3; /* Adjusted z-index */
+    z-index: 2; /* Adjusted z-index */
 }
 
 
