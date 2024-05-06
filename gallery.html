@@ -5,11 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Gallery</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
         .image-container {
             position: relative;
             display: inline-block;
             margin: 10px;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
+
+        .image-container img {
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-container:hover img {
+            transform: scale(1.1);
+        }
+
         .overlay {
             position: absolute;
             top: 0;
@@ -18,15 +40,21 @@
             height: 100%;
             background-color: rgba(0, 0, 0, 0.5);
             color: white;
-            display: none;
+            display: flex;
             justify-content: center;
             align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
         }
+
+        .image-container:hover .overlay {
+            opacity: 1;
+        }
+
         .overlay-content {
             text-align: center;
-        }
-        .image-container:hover .overlay {
-            display: flex;
+            font-size: 16px;
+            padding: 10px;
         }
     </style>
 </head>
