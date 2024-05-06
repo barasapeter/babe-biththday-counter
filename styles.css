@@ -107,12 +107,18 @@ h1
 }
 
 .footer-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    
     border-radius: 30px;
     margin: 10px;
-    width: 80%;
+    width: 100%;
     background-color: #f8d7da; /* Red color for emphasis */
     color: #721c24; /* White text color */
-    padding: 2px;
+    padding: 10px;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
