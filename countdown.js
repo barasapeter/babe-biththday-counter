@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const formattedNextBirthday = nextBirthday.toLocaleDateString('en-US', options);
 
         document.getElementById('countdown').innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-        document.getElementById('dateString').innerHTML = `On ${formattedNextBirthday}. Watch me na prepare 😜❤️.`;
+        document.getElementById('dateString').innerHTML = `On ${formattedNextBirthday}.`;
     }
 
     function updateGreeting() {
@@ -30,9 +30,9 @@ document.addEventListener('DOMContentLoaded', function () {
         if (currentHour >= 0 && currentHour < 12) {
             greeting = 'Tell me you have taken breakfast, usisahau. Have a beautiful morning babe!';
         } else if (currentHour >= 12 && currentHour < 15) {
-            greeting = 'How is your day this afternoon? I can\'t stop thinking of you 😭';
+            greeting = 'How is your day this afternoon? I can\'t stop thinking about you 😭';
         } else if (currentHour >= 15  && currentHour < 19) {
-            greeting = 'Good evening babe, I just wanted to remind that I love you so much! 👸💍';
+            greeting = 'Good evening babe, I just wanted to remind that I love you so much!';
         } else {
             greeting = '🌒Good night, my love. I hope you have sweet dreams and wake up with a smile.😊';
         }
