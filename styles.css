@@ -106,9 +106,9 @@ h1
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-#footer-banner {
+.footer-banner {
     border-radius: 30px;
-    
+    margin: 10px;
     width: 100%;
     background-color: #f8d7da; /* Red color for emphasis */
     color: #721c24; /* White text color */
