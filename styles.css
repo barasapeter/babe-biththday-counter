@@ -107,6 +107,10 @@ h1
 }
 
 .footer-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background-color: #f8d7da; /* Red color for emphasis */
     color: #721c24; /* White text color */
     padding: 20px;
