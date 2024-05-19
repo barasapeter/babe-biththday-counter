@@ -8,6 +8,10 @@ html, body {
     background-position: center; /* Centers the background image */
 }
 
+.main {
+    visibility: hidden;
+}
+
 .background-image {
     position: fixed;
     top: 0;
