@@ -110,7 +110,10 @@ h1
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.thank-you {padding: 20px;}
+.thank-you { 
+    padding: 15px;
+    width: 40%;
+}
 
 .footer-banner {
     
