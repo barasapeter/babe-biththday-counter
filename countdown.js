@@ -28,13 +28,13 @@ document.addEventListener('DOMContentLoaded', function () {
         let greeting = '';
 
         if (currentHour >= 0 && currentHour < 12) {
-            greeting = 'Tell me you have taken breakfast, usisahau. Have a beautiful morning babe!';
+            greeting = 'Good morning! It is another day to focus on the positive side of things. Be positive.';
         } else if (currentHour >= 12 && currentHour < 15) {
-            greeting = 'How is your day this afternoon? I can\'t stop thinking about you 😭';
+            greeting = 'Good afternoon? Keep going 🤟❤️';
         } else if (currentHour >= 15  && currentHour < 19) {
             greeting = 'Good evening babe, I just wanted to remind that I love you so much!';
         } else {
-            greeting = '🌒Good night, my love. I hope you have sweet dreams and wake up with a smile.😊';
+            greeting = 'Good night, my love. I hope you have sweet dreams and wake up with a smile.😊';
         }
 
         document.getElementById('greeting').innerHTML = greeting;
