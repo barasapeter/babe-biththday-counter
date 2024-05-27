@@ -110,6 +110,10 @@ h1
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
+#trackHolidayButton {
+    margin-bottom: 10px;
+}
+
 .thank-you { 
     padding: 10px;
 }
