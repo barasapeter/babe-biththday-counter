@@ -45,7 +45,7 @@
                 <p id="holidayCountdown"></p>
                 
                 <script>
-                    function updateCountdown() {
+                    function holidayCountdown() {
                         const countdownElement = document.getElementById('holidayCountdown');
                         const targetDate = new Date('September 5, ' + new Date().getFullYear() + ' 00:00:00').getTime();
                         const now = new Date().getTime();
@@ -70,8 +70,8 @@
                         }
                     }
                     
-                    const interval = setInterval(updateCountdown, 1000);
-                    updateCountdown(); // Initial call to display immediately
+                    const interval = setInterval(holidayCountdown, 1000);
+                    holidayCountdown(); 
             </div>
         </div>
         
