@@ -51,3 +51,31 @@ document.addEventListener('DOMContentLoaded', function () {
     updateCountdown();
     updateGreeting();
 });
+
+function updateHolidayCountdown() {
+    const countdownElement = document.getElementById('holidayCountdown');
+    const targetDate = new Date('September 5, ' + new Date().getFullYear() + ' 00:00:00').getTime();
+    const now = new Date().getTime();
+    
+    // Check if the target date is in the past and adjust the year if necessary
+    if (now > targetDate) {
+        targetDate = new Date('September 5, ' + (new Date().getFullYear() + 1) + ' 00:00:00').getTime();
+    }
+    
+    const distance = targetDate - now;
+    
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    countdownElement.innerHTML = `${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`;
+    
+    if (distance < 0) {
+        clearInterval(interval);
+        countdownElement.innerHTML = "Finally Boo boo 🥹❤️🫂";
+    }
+}
+    
+const interval = setInterval(updateHolidayCountdown, 1000);
+updateHolidayCountdown(); 
