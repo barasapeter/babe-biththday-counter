@@ -8,21 +8,39 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #countdown-container {
+            background: linear-gradient(to right, #ff99cc, #99ccff, #66ff99);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            color: #fff;
         }
         #countdown {
-            color: #333;
+            font-size: 1.2em;
+        }
+        p {
+            margin: 10px 0;
         }
     </style>
 </head>
 <body>
-<p></p>
-<p id="countdown"></p>
-<p>This fkkknn holiday 🥹</p>
+
+<div id="countdown-container">
+    <p id="countdown"></p>
+    <p>This fkkknn holiday 🥹</p>
+</div>
 
 <script>
     function updateCountdown() {
         const countdownElement = document.getElementById('countdown');
-        const targetDate = new Date('September 5, ' + new Date().getFullYear() + ' 00:00:00').getTime();
+        let targetDate = new Date('September 5, ' + new Date().getFullYear() + ' 00:00:00').getTime();
         const now = new Date().getTime();
         
         if (now > targetDate) {
