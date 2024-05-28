@@ -20,7 +20,7 @@
     </style>
 </head>
 <body>
-<p>Assuming we shall reopen on September 5, 2024, we still have:</p>
+<p></p>
 <p id="countdown"></p>
 <p>This FKN holiday 🥹</p>
 
@@ -41,7 +41,7 @@
         const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((distance % (1000 * 60)) / 1000);
         
-        countdownElement.innerHTML = `${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`;
+        countdownElement.innerHTML = `Assuming we shall reopen on September 5, 2024, we still have: <strong>${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds</strong>. I miss you so much boo boo 😭`;
         
         if (distance < 0) {
             clearInterval(interval);
