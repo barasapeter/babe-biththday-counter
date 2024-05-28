@@ -3,27 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Countdown to September 5</title>
+    <title>Countdown to My Love</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            font-family: 'Cursive', sans-serif;
+            background-color: #ffe6e6;
+            text-align: center;
+            padding-top: 50px;
         }
         #countdown-container {
-            background: linear-gradient(to right, #ff69b4, #ff8c00, #ffa07a, #ffff99, #ff1493, #ff0000, #800080);
-            padding: 20px;
-            border-radius: 10px;
+            background: linear-gradient(to right, #ff69b4, #ffb6c1, #ffc0cb, #ffb6c1, #ff69b4);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
             color: #fff;
-            text-align: center;
+        }
+        #countdown {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .heart {
+            color: #ff69b4;
+            font-size: 36px;
+            animation: beat 1s infinite;
+        }
+        @keyframes beat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
         }
     </style>
 </head>
 <body>
-    <p></p>
     <div id="countdown-container">
         <p id="countdown"></p>
+        <p>Until we reunite, my love <span class="heart">&#10084;</span></p>
     </div>
-    <p>This fkkknn holiday 🥹</p>
 
     <script>
         function updateCountdown() {
@@ -39,11 +54,11 @@
             const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            countdownElement.innerHTML = `Assuming we shall reopen on September 5, 2024, we still have: <strong>${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds</strong>. I miss you so much boo boo 😭`;
+            countdownElement.innerHTML = `${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`;
 
             if (distance < 0) {
                 clearInterval(interval);
-                countdownElement.innerHTML = "The date has passed!";
+                countdownElement.innerHTML = "We're finally together!";
             }
         }
 
