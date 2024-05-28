@@ -51,3 +51,11 @@ document.addEventListener('DOMContentLoaded', function () {
     updateCountdown();
     updateGreeting();
 });
+
+function openTrackHolidayPage() {
+    window.location.href = "track_holiday.html";
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("trackHolidayButton").addEventListener("click", openTrackHolidayPage);
+});
