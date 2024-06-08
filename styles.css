@@ -124,6 +124,7 @@ h1
   padding: 12px 24px;
   text-transform: uppercase;
   transition: all 0.3s ease;
+  margin-bottom: 10px;
 }
 
 #trackHolidayButton:hover {
