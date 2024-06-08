@@ -111,7 +111,29 @@ h1
 }
 
 #trackHolidayButton {
-    margin-bottom: 10px;
+  background: linear-gradient(to right, #ff6b6b, #feca57);
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 12px 24px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+#trackHolidayButton:hover {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+#trackHolidayButton:active {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transform: translateY(1px);
 }
 
 .thank-you { 
