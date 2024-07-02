@@ -21,7 +21,7 @@ function fetchMeals() {
                     <div class="meal-info"><span class="meal-label">Date:</span> ${meal.date}</div>
                     <div class="btn-container">
                         <button class="btn btn-update" onclick="updateMeal(${meal.id})">Update</button>
-                        <button class="btn btn-delete" onclick="deleteMeal(${meal.id})">Delete</button>
+                        <button class="btn btn-delete" onclick="deleteMeal(${meal.id})" disabled>Delete</button>
                     </div>
                 `;
                 mealsList.appendChild(card);
