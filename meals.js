@@ -20,7 +20,7 @@ function fetchMeals() {
                     <div class="meal-info"><span class="meal-label">Time:</span> ${meal.time ? meal.time : 'N/A'}</div>
                     <div class="meal-info"><span class="meal-label">Date:</span> ${meal.date}</div>
                     <div class="btn-container">
-                        <button class="btn btn-update" onclick="updateMeal(${meal.id})">Update</button>
+                        <button class="btn btn-update" onclick="updateMeal(${meal.id})" disabled>Update</button>
                         <button class="btn btn-delete" onclick="deleteMeal(${meal.id})" disabled>Delete</button>
                     </div>
                 `;
@@ -83,7 +83,7 @@ submitButton.addEventListener('click', function(event) {
 fetchMeals();
 
 function updateMeal(id) {
-    alert('Update functionality to be implemented for meal ID: ' + id);
+    alert('..... meal ID...!: ' + id);
 }
 
 function deleteMeal(id) {
