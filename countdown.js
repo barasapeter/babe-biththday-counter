@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function () {
     const birthday = new Date('December 15, 2002 00:00:00 GMT+00:00');
 
